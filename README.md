@@ -1,34 +1,34 @@
 # Appium-Mac-Installation
 
-All we need for appium:
+## **This is all we need for appium**
 
-1.Xcode with latest version(Appium uses it to run ios tests)
+# 1.Xcode with latest version(Appium uses it to run ios tests)
 
      Steps: 1.Open app store on your macbook(Keys:cmd+space and type app store in the search box & press enter), search for Xcode and click the Get button.
             2.Download and complete the installation
             
 
-2.Homebrew (simplifies the installation of softwares)
+# 2.Homebrew (simplifies the installation of softwares)
 
      Steps: 1.Open a terminal(Keys:cmd+space and type terminal in the search box & press enter)
             2.Provide the command /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" and press enter.
             3.Test install by running $ brew --version.You should see something like Homebrew 1.7.4. 
          
 
-3.Carthage (dependency check for appium-doctor but not really needed for Android. Install it anyway as you may do iOS automation in the future)
+# 3.Carthage (dependency check for appium-doctor but not really needed for Android. Install it anyway as you may do iOS automation in the future)
 
      Steps: 1.Open a terminal(Keys:cmd+space and type terminal in the search box & press enter).
             2.Provide the command: brew install carthage and press enter.
 
 
-4.Java (Programming Language)
+# 4.Java (Programming Language)
 
     Steps: 1.Open a terminal(Keys:cmd+space and type terminal in the search box & press enter)
            2.Provide the command: java -version and press enter (If the version is less than 1.8 or the command is not recognized you will have to install java by providing the command: brew install homebrew/cask-versions/java8 and press enter).
            
            
 
-5.Node (helps in parallelization)
+ # 5.Node (helps in parallelization)
 
     Steps: 1.Open a terminal(Keys:cmd+space and type terminal in the search box & press enter)
            2.Provide the command: brew install node and press enter
@@ -36,9 +36,9 @@ All we need for appium:
            
            
 
-6.Android Studio & Android SDK(helps in easy setup of sdk and setting system images required for creating emulator)
+ # 6.Android Studio & Android SDK(helps in easy setup of sdk and setting system images required for creating emulator)
  
-     Android Studio Download & Installation Steps: 
+     **Android Studio Download & Installation Steps** 
      
            1.Open https://developer.android.com/studio/#mac-bundle to download.
            2.Open downloads folder from the Finder present in dock and double click on the Android Studio DMG file.
@@ -51,7 +51,7 @@ All we need for appium:
            9.Enter password to allow HAXM to make changes to your system. HAXM is very import for emulator perforamce.
            10.Click the Finish button.
            
-     Android SDK Download & Installation Steps:
+     **Android SDK Download & Installation Steps**
      
            1.Open Android Studio from the Finder>>Applications folder
            2.Click on the Configure button. It's on the lower right side of the Android Studio welcome dialog.
@@ -76,7 +76,7 @@ All we need for appium:
 
 
 
-7.Add Environment Variables and test them(Environment variables are set to allow access to command line tools and to enable other tools to interact with SDKs more easily)
+# 7.Add Environment Variables and test them(Environment variables are set to allow access to command line tools and to enable other tools to interact with SDKs more easily)
  
         Steps: 1.First determine which shell you use. Open a terminal(Keys:cmd+space and type terminal in the search box & press enter) and provide the command: echo $SHELL
                2.Based on your shell, you need to edit your profile. e.g.vim ~/.bash_profile or ~/.profile or ~/.zshrc and press enter
@@ -92,14 +92,14 @@ All we need for appium:
                
                
 
-8.Test adb-Android Debug Bridge(command line tool that lets us communicate with an Android device or an Emulator)
+# 8.Test adb-Android Debug Bridge(command line tool that lets us communicate with an Android device or an Emulator)
 
          Steps: 1.Open a terminal(Keys:cmd+space and type terminal in the search box & press enter)
                 2.Provide the command: adb and press enter, you will see Android Debug Bridge version 1.0.39 or greater along with additional menu options.
                 
          
 
-9.Create & test Emulator(virtual device used to run tests)
+# 9.Create & test Emulator(virtual device used to run tests)
 
         Steps: 1.Open a terminal(Keys:cmd+space and type terminal in the search box & press enter)
                2.Provode the command: android create avd -n EmulatorOne -k "system-images;android-23;google_apis;x86" and press enter
@@ -113,7 +113,7 @@ All we need for appium:
                
  
 
-10.Appium-Install via Desktop (used to start or stop the appium server)
+# 10.Appium-Install via Desktop (used to start or stop the appium server)
 
     
        Steps: 1.Download and install Appium Desktop by clicking on the link:   https://download.sublimetext.com/Sublime%20Text%20Build%203143.dmg
@@ -122,7 +122,7 @@ All we need for appium:
        Note: We can also install appium via terminal using npm(provide the command: npm install -g appium, verify appium installed correctly by providing the command: appium -v)
          
 
-11.Appium doctor -Install & test (Attempts to diagnose and fix common Node, iOS and Android configuration issues before starting Appium)
+# 11.Appium doctor -Install & test (Attempts to diagnose and fix common Node, iOS and Android configuration issues before starting Appium)
 
 
       Steps: 1.Open a terminal(Keys:cmd+space and type terminal in the search box & press enter)
